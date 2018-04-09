@@ -1,0 +1,3 @@
+<?php
+
+  bootTemplate( $page );
