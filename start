@@ -1,0 +1,8 @@
+#!/usr/bin/php
+
+<?php
+
+  // Route requests.
+  chdir( getcwd() );
+  print "Server started 127.0.0.1:2201\n";
+  exec( 'php -S 127.0.0.1:2201 ./app/router.php' );
