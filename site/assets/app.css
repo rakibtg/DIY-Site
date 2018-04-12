@@ -7,7 +7,7 @@ html, body {
   position: relative;
   padding-top: 35px;
   color: #555;
-  background-color: #f5f5f5 !important;
+  /* background-color: #f5f5f5 !important; */
   height: 100%;
 }
 
@@ -22,7 +22,7 @@ div.page-wrapper div.content-body {
 }
 
 p {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 #header {
@@ -48,8 +48,17 @@ p {
   font-size: 30px;
   padding-bottom:  5px;
   font-family: 'Poppins', sans-serif;
-  color: #46b52e;
+  /* color: #46b52e; */
 }
+
+#header h1 a {
+  color: #444444;
+}
+#header h1 a:hover {
+  color: #46b52e;
+  text-decoration: none;
+}
+
 #header p {
   margin: 0px;
   padding: 0px;
@@ -70,18 +79,13 @@ p {
 }
 
 .article-snippet {
-  padding: 10px 20px;
-  border: 1px solid #e1e8ee;
-  margin: 10px 0px;
+  padding: 10px 0px;
   background-color: #fff;
-  border-radius: 4px;
-/*   box-shadow: 1px 1px 10px 0px #ccc; */
 }
 
 
 .article-snippet h1 {
   margin-bottom: 0px;
-  line-height: 35px;
   padding-bottom: 2px;
 }
 
@@ -93,12 +97,72 @@ p {
   text-decoration: none;
 }
 
-.article-snippet h1 a {
-  font-size: 25px;
+.main-title {
+  font-size: 35px;
+  line-height: 50px;
   font-family: 'Poppins', sans-serif;
   color: #444;
 }
 
-.article-snippet h1 a:hover {
+a.main-title:hover {
   color: #44b52e;
+}
+
+.diyfont {
+  font-family: 'Poppins', sans-serif;
+}
+
+.pt20 {
+  padding-top: 20px;
+}
+
+.login-form-wrapper {
+  padding-top: 100px;
+}
+
+.login-form h1 {
+  margin-bottom: 20px;
+}
+
+.input-control {
+  border: 0px;
+  border-bottom: 4px solid #444;
+  outline: none;
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  margin-bottom: 40px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.input-control:focus {
+  border-color: #44b52e;
+}
+
+
+.button-control {
+  border: 4px solid #444;
+  font-family: 'Poppins', sans-serif;
+  padding: 7px 50px;
+}
+
+.note-toolbar {
+  background-color: #fff !important;
+  border: 0px !important;
+}
+
+.note-editor {
+  border: 0px !important;
+}
+
+.story-form div.story-title input {
+  display: block;
+  width: 100%;
+  margin: 20px 0px;
+  padding: 0px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  letter-spacing: 0.4px;
+  outline: none;
+  border: 0px;
 }
