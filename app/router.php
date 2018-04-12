@@ -21,7 +21,15 @@
   //     [2] => mellos
   // )
 
-  if ( empty( $uri[ 1 ] ) ) {
-    $page = 'homepage';
-    require_once './site/index.php';
+  $module = trim( $uri[ 1 ] );
+
+  if ( empty( $module ) ) {
+    $page = './site/pages/homepage.php';
+  } else if ( $module === 'login' ) {
+    $page = './site/admin/login.php';
+  } else if ( $module === 'new-story' ) {
+    $page = './site/admin/new-story.php';
   }
+
+  // Adding the index page.
+  require_once './site/index.php';
